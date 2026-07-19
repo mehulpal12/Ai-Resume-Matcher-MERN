@@ -440,7 +440,7 @@ export default function DashboardHome() {
   // Filter dropdown state
   const [showFilterDropdown, setShowFilterDropdown] = useState<'location' | 'seniority' | 'industry' | null>(null);
 
-  const backendUrl = 'http://localhost:5000/api';
+  const backendUrl = 'https://ai-resume-matcher-mern-backend.onrender.com/api';
 
   // SSE setup for real-time history sync
   useEffect(() => {

@@ -13,6 +13,9 @@ app.use(express.json());
 
 // Main Router API Registration
 app.use('/api', analyzeRoute);
+app.use('/hello', (req: Request, res: Response) => {
+  res.send('Hello World!');
+});
 
 // Global Uncaught Exception Catch-All Handler
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
